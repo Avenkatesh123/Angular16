@@ -8,6 +8,7 @@ import { ChildComponent } from './component/child/child.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
+import { GitExampleComponent } from './component/git-example/git-example.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     ParentComponent,
     ChildComponent,
+    GitExampleComponent,
    
   ],
   imports: [
