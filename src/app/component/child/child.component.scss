@@ -1,0 +1,35 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .custome-css-for-table {
+    height: 300px;
+    overflow-y: auto;
+    th{
+      background-color: green;
+    }
+    tr:nth-child(odd) {
+      background-color: #0cefef;
+    }
+    tr:nth-child(even) {
+      background-color: #d5dbdb;
+    }
+  }
+  .product{
+    background-color: aquamarine;
+    color: aliceblue;
+    padding: 10px;
+    text-align: center;
+  }

@@ -1,0 +1,53 @@
+<div class="users">
+<h1 style="text-align: center; font-size: 40px;">Users Details</h1>
+</div>
+<!-- <h3>Child Data: {{childData}}</h3> -->
+<!-- <div class="custome-css-for-table">
+    <table>
+        <tr>
+          <th>Id</th>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>DiscountPercentage</th>
+        </tr>
+        <tr *ngFor="let item of productList">
+          <td>{{item.id}}</td>
+          <td>{{item.title}}</td>
+          <td>{{item.description}}</td>
+          <td>{{item.price}}</td>
+          <td>{{item.discountPercentage}}</td>
+        </tr>
+      </table>
+</div> -->
+<div class="custome-css-for-table">
+  <table>
+    <tr>
+      <th>Id</th>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>BloodGroup</th>
+      <th>Domain</th>
+      <th>eyeColor</th>
+    </tr>
+    <tr *ngFor="let item of userList">
+      <td>{{item.id}}</td>
+      <td>{{item.firstName}}</td>
+      <td>{{item.lastName}}</td>
+      <td>{{item.age}}</td>
+      <td>{{item.gender}}</td>
+      <td>{{item.email}}</td>
+      <td>{{item.phone}}</td>
+      <td>{{item.bloodGroup}}</td>
+      <td>{{item.domain}}</td>
+      <td>{{item.eyeColor}}</td>
+    </tr>
+  </table>
+
+</div>
+<hr>
+<app-child (cData)="userList = $event" [pParentPostMan]="productList"></app-child>

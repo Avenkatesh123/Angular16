@@ -1,0 +1,30 @@
+<div class="product">
+  <h1 style="font-size: 40px;">Product Details</h1>
+<!-- <h4>{{pParentPostMan | json}}</h4> -->
+</div>
+<div class="custome-css-for-table">
+    <table>
+        <tr>
+          <th>Id</th>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Category</th>
+          <th>Stock</th>
+          <th>Price</th>
+          <th>DiscountPercentage</th>
+          <th>Rating</th>
+        </tr>
+        <tr *ngFor="let item of pParentPostMan">
+          <td>{{item.id}}</td>
+          <td>{{item.title}}</td>
+          <td>{{item.description}}</td>
+          <td>{{item.category}}</td>
+          <td>{{item.stock}}</td>
+          <td>{{item.price}}</td>
+          <td>{{item.discountPercentage}}</td>
+          <td>{{item.rating}}</td>
+        </tr>
+      </table>
+</div>
+<!-- <button mat-raised-button color="primary" (click)="onClick()"> send data to parent</button> -->
+<button mat-raised-button color="primary" (click)="onClick()">Sending Data To Parent</button>
