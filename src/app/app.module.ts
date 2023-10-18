@@ -8,14 +8,14 @@ import { ChildComponent } from './component/child/child.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
-import { TextformatePipe } from './Pipes/textformate.pipe';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ParentComponent,
     ChildComponent,
-    TextformatePipe
+   
   ],
   imports: [
     BrowserModule,
